@@ -21,6 +21,8 @@ You will need:
     INSTRUMENT_OMIT_LIST = [] 
     ```
     You can use the first few lines of code output to help. In this case, we want to remove tracks 3 and 4
+    
+    *In audacity, the track number may not be the same as in this script but the order is identical. For example, if in audacity track number 1 5 6 and 9 show up and you want to disable track 5 and 9, you would write [2,4] because they are the second and fourth track in order.*
     ```
     1: "Lead"
     2: "Bass"
@@ -79,7 +81,7 @@ The **FLASHES_PER_DIVISON** variable determines how many notes are played per di
 
 # Potential issues
 
-Some TI Hubs cannot play notes below C3. I don't know what causes it, or a fix. For reference, my hub runs sketch version 1.3.0.19 and it works. I have made a workaround, which just increases low notes until they are C3 or above.
+Some TI Hubs cannot play notes below C3. I don't know what causes it, or a fix. For reference, my hub runs sketch version 1.3.0.19 and it works. I have made a workaround, which just increases low notes until they are C3 or above. Also, the notes from the 6th octave or above dont sound very good, so I changed them aswell.
 ```python
 pitch_to_note = {
   21: "A3",
@@ -151,25 +153,25 @@ pitch_to_note = {
   87: "DS6",
   88: "E6",
   89: "F6",
-  90: "FS6",
-  91: "G6",
-  92: "GS6",
-  93: "A6",
-  94: "AS6",
-  95: "B6",
-  96: "C7",
-  97: "CS7",
-  98: "D7",
-  99: "DS7",
-  100: "E7",
-  101: "F7",
-  102: "FS7",
-  103: "G7",
-  104: "GS7",
-  105: "A7",
-  106: "AS7",
-  107: "B7",
-  108: "C8",
+  90: "FS5",
+  91: "G5",
+  92: "GS5",
+  93: "A5",
+  94: "AS5",
+  95: "B5",
+  96: "C5",
+  97: "CS5",
+  98: "D5",
+  99: "DS5",
+  100: "E5",
+  101: "F5",
+  102: "FS5",
+  103: "G5",
+  104: "GS5",
+  105: "A5",
+  106: "AS5",
+  107: "B5",
+  108: "C5",
 }
 ```
 Here is an alternate version of Fur Elise to paste in with the notes increased:
