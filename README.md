@@ -1,6 +1,10 @@
 # ti_hub_midi
 Midi for TI Innovator Hub
 
+# Demos
+
+If you are here just to listen to the demos, go into the demo folder, download the .tns files, open them in the CX CAS software and run them. There is no need for all the complicated steps below, they are the instructions on how to make new songs.
+
 # Requirements
 
 You will need:
